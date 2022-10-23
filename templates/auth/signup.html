@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="static/css2/s2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Smart <br>City</h1>
+		<p>Having access to all business and student related facilities, tourism, jobs,</p><p> and many more without having to deal with brokers and hustles through the app.</p>
+
+		<span>
+			<!--<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>-->
+			<a href="/signin" style="margin-right: 2px"> Sign In</a>
+		</span>
+		</div>
+	</div>
+
+
+		<div class="right">
+
+		<h1 style="font-size:68"><b>SIGN UP</b></h1>
+
+			<form action="/signup" method="post">
+                 {% csrf_token %}
+        <label for="username" >Username</label>
+        <input type="text" id="username" name="username" placeholder="Create a username" required>
+        <br>
+         <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+        <br>
+         <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+        <br>
+         <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+        <br>
+         <label for="pass1">Password</label>
+        <input type="password" id="pass1" name="pass1" placeholder="Enter Password" required>
+        <br>
+         <label for="pass2">Confirm Password</label>
+        <input type="password" id="pass2" name="pass2" placeholder="Confirm password" required>
+        <br>
+			 <br>
+			<button type="submit" >Sign Up</button>
+    </form>
+
+
+			<br><br>
+
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+
+			<p>forget password?</p>
+		</div>
+
+
+
+	</div>
+
+
+</div>
+<!-- partial -->
+
+</body>
+</html>
